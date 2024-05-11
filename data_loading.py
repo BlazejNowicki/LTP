@@ -1,11 +1,10 @@
 import json
 from dataclasses import dataclass
 from pathlib import Path
-
 from torch_geometric.datasets import TUDataset
 
 DATASETS_DIR = Path("datasets")
-DATA_SPLITS_DIR = Path("data_splits")
+DATA_SPLITS_DIR = Path(__file__).parent / "data_splits"
 DATASET_NAMES = [
     "DD",
     "NCI1",
